@@ -131,3 +131,40 @@ no changes added to commit (use "git add" and/or "git commit -a")
 PS D:\Git-Practice> 
 
 
+
+PS D:\Git-Practice> git add .
+warning: in the working copy of 'Readme.md', CRLF will be replaced by LF the next time Git touches it
+PS D:\Git-Practice> git commit -m "Add Git Practice Readme.md File"
+[master 177cd66] Add Git Practice Readme.md File
+ 1 file changed, 114 insertions(+)
+PS D:\Git-Practice> 
+
+
+
+
+PS D:\Git-Practice> git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 3.79 KiB | 3.79 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/AkashDwi17/Git-Command-CDAC.git
+ * [new branch]      master -> master
+PS D:\Git-Practice> 
+
+
+
+PS D:\Git-Practice> git branch
+* master
+  practice
+PS D:\Git-Practice> git remote -v
+origin  https://github.com/AkashDwi17/Git-Command-CDAC.git (fetch)
+origin  https://github.com/AkashDwi17/Git-Command-CDAC.git (push)
+PS D:\Git-Practice> git branch --set-upstream-to=origin/master
+branch 'master' set up to track 'origin/master'.
+PS D:\Git-Practice> 
+PS D:\Git-Practice> git pull
+Already up to date.
+PS D:\Git-Practice> 
+PS D:\Git-Practice> 
